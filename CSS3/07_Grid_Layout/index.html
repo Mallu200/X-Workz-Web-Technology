@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            /* 1. DEFINE COLUMNS: 1 fraction for sidebar, 3 fractions for main */
+            grid-template-columns: 1fr 3fr; 
+            
+            /* 2. DEFINE ROWS: Auto size for header/footer, 400px for middle */
+            grid-template-rows: auto 400px auto; 
+            
+            gap: 10px;
+            font-family: sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        /* 3. PLACING ITEMS */
+        .header {
+            grid-column: 1 / span 2; /* Stretch from column 1 across 2 columns */
+            background-color: #2ecc71;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background-color: #3498db;
+            padding: 20px;
+        }
+
+        .main {
+            background-color: #9b59b6;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-column: 1 / span 2;
+            background-color: #34495e;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">Header (Span 2 Columns)</header>
+        <aside class="sidebar">Sidebar</aside>
+        <main class="main">Main Content Area</main>
+        <footer class="footer">Footer (Span 2 Columns)</footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors & Colors</title>
+    
+    <style>
+        /* 1. TAG SELECTOR: Targets every <p> on the page */
+        p {
+            color: SlateGray;
+        }
+
+        /* 2. CLASS SELECTOR: Targets anything with class="highlight" */
+        /* Use a dot (.) for classes */
+        .highlight {
+            color: #ffffff;      /* White in Hexadecimal */
+            background-color: rgb(255, 99, 71); /* Tomato red in RGB */
+        }
+
+        /* 3. ID SELECTOR: Targets the one unique element with id="main-title" */
+        /* Use a hashtag (#) for IDs */
+        #main-title {
+            color: DarkBlue;
+            text-decoration: underline;
+        }
+
+        /* 4. UNIVERSAL SELECTOR: Targets every single thing */
+        * {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-title">The Design Studio</h1>
+
+    <p>This is a normal paragraph targeted by the <strong>Tag Selector</strong>.</p>
+
+    <p class="highlight">This paragraph is special! It uses a <strong>Class Selector</strong> to look like a button or a warning.</p>
+
+    <p>This is another regular paragraph to show that the tag selector works on all of them.</p>
+
+    <div class="highlight">Classes can be used on different tags, like this DIV!</div>
+
+</body>
+</html>

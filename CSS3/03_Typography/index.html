@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Typography</title>
+    <style>
+        body {
+            /* 1. FONT FAMILY: The style of the letters */
+            /* We provide 'fallback' fonts in case the first one isn't on the computer */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6; /* Adds breathing room between lines */
+            color: #333;
+        }
+
+        h1 {
+            /* 2. SIZING & WEIGHT */
+            font-size: 3rem; /* 'rem' is better than 'px' for modern screens */
+            font-weight: 900; /* Super Bold */
+            text-transform: uppercase; /* Force ALL CAPS */
+            letter-spacing: 2px; /* Space between letters */
+            text-align: center;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: gray;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 18px;
+            text-indent: 30px; /* Indents the first line of the paragraph */
+        }
+
+        .fancy-link {
+            text-decoration: none; /* Removes the ugly blue underline */
+            color: royalblue;
+            font-weight: bold;
+        }
+
+        .fancy-link:hover {
+            text-decoration: underline; /* Underline only appears when you hover! */
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Typography Master</h1>
+    <p class="subtitle">Exploring the art of web fonts</p>
+
+    <p>
+        Good typography is invisible. When it is done well, the reader can focus on the 
+        content without distraction. In CSS, we control the <strong>weight</strong>, 
+        <strong>size</strong>, and <strong>spacing</strong> of every single character.
+    </p>
+
+    <p>
+        Want to learn more? Check out 
+        <a href="#" class="fancy-link">Google Fonts</a> for thousands of free options.
+    </p>
+
+</body>
+</html>

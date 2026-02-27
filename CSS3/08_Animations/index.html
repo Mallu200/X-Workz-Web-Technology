@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations & Transitions</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            padding-top: 50px;
+            font-family: sans-serif;
+        }
+
+        /* 1. TRANSITION: Smooth hover effect */
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+            /* The secret sauce: Property, Duration, Timing-function */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #2ecc71;
+            transform: scale(1.1); /* Makes the button grow slightly */
+        }
+
+        /* 2. ANIMATION: Infinite rotation */
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #e74c3c;
+            border-radius: 50%;
+            
+            /* Animation-name, Duration, Timing, Iteration-count */
+            animation: spin 1s linear infinite;
+        }
+
+        /* 3. KEYFRAMES: The steps of the animation */
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h3>Hover over me:</h3>
+        <button class="btn">Hover Effect</button>
+    </div>
+
+    <div>
+        <h3>Continuous Animation:</h3>
+        <div class="loader"></div>
+    </div>
+
+</body>
+</html>

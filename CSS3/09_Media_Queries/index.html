@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design with Media Queries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row; /* Side-by-side for Desktop */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 50px;
+            background-color: royalblue;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* --- MEDIA QUERY: For tablets (less than 768px wide) --- */
+        @media (max-width: 768px) {
+            body { background-color: lightgoldenrodyellow; }
+            
+            .card { background-color: darkorange; }
+        }
+
+        /* --- MEDIA QUERY: For phones (less than 480px wide) --- */
+        @media (max-width: 480px) {
+            body { background-color: mistyrose; }
+
+            .container {
+                flex-direction: column; /* Stack vertically for Phones */
+            }
+
+            .card { 
+                background-color: crimson; 
+                padding: 20px; /* Smaller padding for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Resize your browser window!</h1>
+    
+    <div class="container">
+        <div class="card">Item 1</div>
+        <div class="card">Item 2</div>
+        <div class="card">Item 3</div>
+    </div>
+
+</body>
+</html>

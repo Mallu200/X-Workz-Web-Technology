@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backgrounds & Borders</title>
+    <style>
+        /* 1. HERO SECTION: Full-size background image */
+        .hero {
+            height: 400px;
+            /* Using a placeholder image */
+            background-image: url('https://picsum.photos/id/10/1200/400');
+            
+            /* ESSENTIAL: These three lines make images look good */
+            background-size: cover;      /* Scales image to fill the space */
+            background-position: center; /* Keeps the middle of the image visible */
+            background-repeat: no-repeat;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        /* 2. GRADIENTS: Mixing colors like a pro */
+        .gradient-box {
+            height: 150px;
+            margin: 20px 0;
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            border-radius: 15px; /* Round the corners */
+        }
+
+        /* 3. BORDER STYLES */
+        .card {
+            border: 4px dashed #ff4757; /* Width, Style, Color */
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #f1f2f6;
+            
+            /* SHADOWS: Making it pop off the page */
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+            border-radius: 50px 0px 50px 0px; /* Top-Left, Top-Right, Bottom-Right, Bottom-Left */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>Welcome to My Styled World</h1>
+    </div>
+
+    <div class="gradient-box"></div>
+
+    <div class="card">
+        <h2>Custom Border & Shadows</h2>
+        <p>This card has rounded corners, a dashed border, and a subtle box-shadow to give it depth.</p>
+    </div>
+
+</body>
+</html>

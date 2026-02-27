@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSS Box Model</title>
+
+    <style>
+        .box-container {
+            /* 1. CONTENT SIZE */
+            width: 300px;
+            background-color: lightblue;
+
+            /* 2. PADDING: Space inside the box */
+            padding: 20px;
+
+            /* 3. BORDER: The actual frame */
+            border: 5px solid darkblue;
+
+            /* 4. MARGIN: Space outside the box */
+            margin: 50px;
+        }
+
+        .simple-text {
+            background-color: white;
+            /* This helps us see where the content ends and padding begins */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Visualizing the Box Model</h1>
+
+    <div class="box-container">
+        <div class="simple-text">
+            I am the <strong>Content</strong>. I am surrounded by bubble wrap (Padding), a cardboard shell (Border), and a "keep Away" zone (Margin).
+        </div>
+    </div>
+
+    <p>Check the space around the blue box! That's the 50px Margin at work.</p>
+</body>
+</html>
