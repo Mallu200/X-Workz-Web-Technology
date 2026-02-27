@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Coding Journey</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#contact">Hire Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://picsum.photos/150" alt="Professional Avatar" width="150">
+            <p>Hello! I am a student learning <strong>HTML5 from scratch</strong>. I believe in clean code and organized folder structures.</p>
+            <p>You can find my learning resources at the <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>.</p>
+        </section>
+
+        <hr>
+
+        <section id="skills">
+            <h2>Learning Progress</h2>
+            <h3>Topics Mastered:</h3>
+            <ul>
+                <li>Semantic Structure</li>
+                <li>Forms and Validation</li>
+                <li>Tables and Data</li>
+            </ul>
+
+            <h3>Weekly Study Schedule:</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Subject</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML Basics</td>
+                        <td>2 hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Advanced Forms</td>
+                        <td>3 hrs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact Me / Hire Me</h2>
+            <form action="#" method="POST">
+                <p>
+                    <label for="client-name">Your Name:</label>
+                    <input type="text" id="client-name" name="name" required>
+                </p>
+                <p>
+                    <label for="project-type">Project Type:</label>
+                    <select id="project-type" name="type">
+                        <option value="web">Web Structure</option>
+                        <option value="data">Data Organization</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </p>
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Student Developer Portfolio</p>
+        <p>Follow me on <a href="https://github.com/Mallu200">GitHub</a></p>
+    </footer>
+
+</body>
+</html>

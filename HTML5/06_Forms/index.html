@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+
+    <h1>Work with Us: Application Form</h1>
+
+    <form action="/submit-form" method="POST">
+
+        <p>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="user_name" placeholder="John Doe" required>
+        </p>
+
+        <p>
+            <label for="user-email">Email Address:</label>
+            <input type="email" id="user-email" name="user_email" required>
+        </p>
+
+        <p>
+            <label for="user-pass">Create Password:</label>
+            <input type="password" id="user-pass" name="user_password">
+        </p>
+
+        <hr>
+
+        <p>
+            <label for="department">Department:</label>
+            <select id="department" name="dept">
+                <option value="tech">Technology</option>
+                <option value="hr">Human Resources</option>
+                <option value="sales">Sales & Marketing</option>
+            </select>
+        </p>
+
+        <p>
+            Gender:
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </p>
+
+        <hr>
+
+        <p>
+            <label for="bio">Tell us about yourself:</label><br>
+            <textarea id="bio" name="user_bio" rows="4" cols="30"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" id="terms" name="agree" required>
+            <label for="terms">I agree to the terms and conditions</label>
+        </p>
+
+        <button type="submit">Send Application</button>
+
+    </form>
+
+</body>
+</html>
