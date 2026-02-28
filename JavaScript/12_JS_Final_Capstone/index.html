@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Dash | JS Capstone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .done { text-decoration: line-through; opacity: 0.6; }
+        .card { transition: 0.3s; border: none; }
+        .dark-mode { background-color: #121212 !important; color: white !important; }
+        .dark-card { background-color: #1e1e1e !important; color: white !important; border: 1px solid #333; }
+    </style>
+</head>
+<body class="bg-light">
+
+    <div class="container py-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h1 id="greeting">Good Day!</h1>
+                <p id="quote" class="text-muted small italic">Fetching daily inspiration...</p>
+            </div>
+            <button onclick="toggleTheme()" class="btn btn-outline-dark" id="themeBtn">🌙 Dark Mode</button>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm p-4 mb-4" id="inputCard">
+                    <h5>Create Task</h5>
+                    <input type="text" id="taskInput" class="form-control mb-2" placeholder="What needs doing?">
+                    <button class="btn btn-primary w-100" id="addBtn">Add to List</button>
+                </div>
+                
+                <div class="card shadow-sm p-4" id="statsCard">
+                    <h5>Efficiency</h5>
+                    <div class="progress mb-2">
+                        <div id="progressBar" class="progress-bar bg-success" style="width: 0%"></div>
+                    </div>
+                    <small id="statsText">0% Completed</small>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card shadow-sm p-4" id="listCard">
+                    <div class="d-flex justify-content-between">
+                        <h5>Your Tasks</h5>
+                        <span class="badge bg-primary" id="countBadge">0 Tasks</span>
+                    </div>
+                    <hr>
+                    <div id="taskList">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="final_app.js"></script>
+</body>
+</html>
