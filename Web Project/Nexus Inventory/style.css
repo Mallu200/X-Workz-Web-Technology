@@ -1,0 +1,30 @@
+/* Custom property for smooth transitions */
+body {
+    transition: background-color 0.3s;
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* Row hover animation */
+#productTableBody tr {
+    transition: all 0.2s;
+}
+
+#productTableBody tr:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.005);
+}
+
+.table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
